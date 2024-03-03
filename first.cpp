@@ -8,9 +8,14 @@ float sum(float a, float b){
     return a+b;
 }
 int main(){
-    char c=66, v='B';
-    int m = 54, n = 66;
-    float f1 = 31.2, f2 = 54.3;
-    cout <<"sum of m, v : " <<sum(m,v) <<endl <<"sum f1,f2: " << sum(f1, f2);   
+    char c{66}, v{'B'};
+    int m{54}, n;
+    float f1{1.2}, f2{54.3};
+    double d1;
+    n = 62;
+    d1 = 1.321e34;
+    double d2 = 4.25e12,d3;
+    d3 = d1/d2;
+    cout << d3;
     return 0;
 }
