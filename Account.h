@@ -1,4 +1,5 @@
 #include<iostream>
+#include<string>
 class Account{
     public:
     // Method , here is constructor 
@@ -10,8 +11,19 @@ class Account{
     int getBalance(){
         return balance;
     }
-    int balance{5000};
-    // private:
-    // //Feild of class , in c++ member attribute
-    //     int balance{5000};
+    void setBalance(int b){
+        if(b>5000)
+            balance = b;
+    }
+    std::string getName() const{
+        // name =  "No name";
+        return name;
+    }
+    void setName(std::string s){
+        name = s;
+    }
+    private:
+    //Feild of class , in c++ data member
+        int balance{5000};
+        std::string name;
 };
